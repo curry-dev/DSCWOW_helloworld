@@ -44,8 +44,21 @@
               
           }
             function getDistance() {
-              var distance = Math.sqrt( Math.pow((position.coords.latitude-12.3), 2) + Math.pow((position.coords.longitude-76.576), 2) );
-              x.innerHTML = "Distance from your current location to Mysore is :"+ distance;
+              const R = 6371000; // metres
+              var lat1=(position.coords.latitude*Math.pi)/180;  //gps lat
+              var lon1=(position.coords.longitude*Math.pi)/180; //gps lon
+              var lat2=(12.3*Math.PI)/180;                      //mysore lat
+              var lon2=(76.576*Math.PI)/180;                    //mysore lon
+              const t1 = lat1 * Math.PI/180; // t1,n1 in radians, t1=phi1, t2
+              const t2 = lat2 * Math.PI/180;                //a = sin²(Δφ/2) + cos φ1 ⋅ cos φ2 ⋅ sin²(Δλ/2)
+              const n1 = lon1*Math.PI/180;
+              const n2 = lon2*Math.PI/180;
+              const diff_t=(t2-t1)*Math.PI/180;   //=delta_phi
+              const diff_n=(n2-n1)*Math.PI/180;   //=delta_lambda
+              const a =Math.pow(Math.sin(diff_t/2),2) + Math.cos(t1)*Math.cos(t2)*(Math.pow(Math.sin(diff_n/2),2);
+              const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+              const distance = R*c;
+              x.innerHTML = "Distance from your current location to Mysore is :"+ distance+"kms";
               return distance;
             }
           </script>
