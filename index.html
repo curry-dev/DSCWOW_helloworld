@@ -39,6 +39,25 @@
       <div class="btn-container">
         <a href="https://www.instagram.com/mysuru/"><span class="btn message">Take me to Instagram <i class="fa fa-instagram"></i></span></a>
       </div>
+      <div class = "map-api">
+      <!-- gps api -->
+      <h1>You are here</h1>
+      <div id="map" style="width:400px;height:400px;background:grey"></div>
+      <!-- javascript -->
+      <script type = "text/javascript">
+      function myMap() {
+        var mapOptions = {
+            center: new google.maps.LatLng(51.5, -0.12),
+            zoom: 10,
+            mapTypeId: google.maps.MapTypeId.HYBRID
+        }
+        var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+      }
+      </script>
+
+      <!-- <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script> -->
+      <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+      </div>
     </footer>
   </body>
 </html>
