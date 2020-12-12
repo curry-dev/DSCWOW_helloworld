@@ -11,6 +11,9 @@ h1, h2, h3, h4, h5, h6, p, div {
 
 body {
   font-family: "Lucida Grande";
+  /* background-image: url("images/ok-this.jpg");
+  background-attachment: fixed;
+  background-size: cover; */
 }
 
 a {
@@ -63,11 +66,13 @@ header {
 }
 
 .map-api {
-  padding: 20px 20px;
+  padding: 20px 180px;
+  margin: 0 auto;
 }
 
 .travel-wrapper {
-  padding-bottom: 400px;
+  background-size: cover;
+  padding-bottom: 300px;
   padding-left: 5%;
   padding-right: 5%;
   background-color: #C8C3EA;
@@ -80,7 +85,7 @@ header {
   color: #5f5d60;
 }
 
-.heading h2 {
+.heading h1 {
   font-weight: normal;
 }
 
