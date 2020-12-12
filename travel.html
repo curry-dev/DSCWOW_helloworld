@@ -39,8 +39,10 @@
             }
 
             function showPosition(position) {
-              x.innerHTML = "Latitude: " + position.coords.latitude +
-              "<br>Longitude: " + position.coords.longitude;
+              var distance = Math.sqrt( Math.pow((position.coords.latitude-12.3), 2) + Math.pow((position.coords.longitude-76.576), 2) );
+              x.innerHTML = "Distance from your current location to Mysore is: "+ distance;
+              // x.innerHTML = "Latitude: " + position.coords.latitude +
+              // "<br>Longitude: " + position.coords.longitude;
           }
           </script>
         </div>
