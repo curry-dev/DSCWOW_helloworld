@@ -54,13 +54,6 @@ header {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-span.menu-icon {
-  color: red;
-  float: right;
-  font-size: 25px;
-  padding: 21px 0;
-  display: none;
-}
 
 .body-container {
   background-image: url("images/background_index.png");
