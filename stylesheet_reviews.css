@@ -57,11 +57,26 @@ header {
   background-color: rgba(34, 49, 52, 0.9);
 }
 
-.heading {
-  padding: 100px 20px;
-  font-family: "Open Sans";
+.main {
+  margin: 100px 300px;
+  background-color: #cce6ff;
+  /* text-align: left; */
+  padding: 100px 100px;
 }
 
-.main {
-  padding: 100px 20px;
+.submit {
+  background-color: #55acee;
+}
+
+.btn {
+  padding: 12px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.btn:hover {
+  opacity: 1;
 }
