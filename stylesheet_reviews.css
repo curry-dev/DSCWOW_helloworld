@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lucida Grande";
+  /* background-image: url("images/ok-this.jpg");
+  background-attachment: fixed;
+  background-size: cover; */
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  height: 80px;
+  width: 100%;
+  background-color: rgb(219,112,147,0.8);
+  position :fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  width: 124px;
+  margin-top: 0px;
+  height: 80px;
+}
+
+.header-left {
+  float: left;
+}
+
+.header-right {
+  float: right;
+  margin-right: 25px;
+}
+
+.header-right a {
+  line-height: 80px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+  float: left;
+  transition: all 0.5s;
+}
+
+.header-right a:hover {
+  background-color: rgba(34, 49, 52, 0.9);
+}
+
+.heading {
+  padding: 100px 20px;
+  font-family: "Open Sans";
+}
+
+.main {
+  padding: 100px 20px;
+}
